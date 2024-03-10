@@ -1,6 +1,3 @@
-//AdOffer, represents a model for an advertising offer,
-// encapsulating various details about the advertisement
-
 class AdOffer {
   final String adButtonText;
   final String adContent;
@@ -17,10 +14,6 @@ class AdOffer {
     required this.bank,
     required this.bankId,
   });
-
-  //The constructor "AdOffer.fromJson", which is a factory constructor that creates an instance of AdOffer from a JSON object.
-  // This factory constructor takes a Map<String, dynamic> (representing JSON data) as an input,
-  // extracts the relevant fields using the keys (e.g., 'ad_button_text', 'ad_content', etc.).
 
   factory AdOffer.fromJson(Map<String, dynamic> json) {
     return AdOffer(
